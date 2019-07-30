@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>form page</h1>
+        <form method="POST" action="/register">
+            <table class="table" border="1">
+                <tr>
+                    <td>first name</td>
+                    <td><input type="text" name="fn"></td> 
+                </tr>
+                <tr>
+                        <td>last name</td>
+                        <td><input type="text" name="ln"></td> 
+                </tr>
+                    
+               <tr>
+                   <td>gender</td>
+                   <td>male:<input type="radio" name="gender" value="m"> female:<input type="radio" name="gender" value="f"></td>
+               </tr>    
+            
+               <tr>
+                   <td>email: <input type="email" placeholder="Enter your email" name="email"></td>
+                   <td>password: <input type="password" placeholder="Enter your password" name="pw"></td>
+               </tr>
+               <tr>
+                   <td>Birthday: </td>
+                   <td><input type="date" name="dob"></td>
+               </tr>
+                
+            
+               <tr>
+                   <td> I Agree to the Terms and Conditions <input type="checkbox"></td>
+                   <td><input type="submit"></td>
+               </tr>
+            </table>
+        </form>
+    </body>
+</html>

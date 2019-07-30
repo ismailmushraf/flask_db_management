@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>View Database</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>View your Database</h1>
+        <table border="1" class="table">
+            <thead>
+                <td>E-Mail</td>
+                <td>Password</td>
+            </thead>
+            <tbody>
+                {% for i in val %}
+                <tr>
+                    <td>{{ i[0] }}</td>
+                    <td>{{ i[1] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

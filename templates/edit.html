@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>form page</h1>
+        <form method="POST" action="/update">
+            <table border="1" class="table">
+                <tr>
+                    <td>first name</td>
+                    <td><input type="text" name="fn" value="{{ val[0] }}"></td>
+                </tr>
+                <tr>
+                        <td>last name</td>
+                        <td><input type="text" name="ln" value="{{ val[1] }}"></td>
+                </tr>
+                    
+               <tr>
+                   <td>gender</td>
+                   <td>male:<input type="radio" name="gender" value="m" {% if val[2]=="m" %} checked {% endif %}> female:<input type="radio" name="gender" value="f" {% if val[2]=="f" %} checked {% endif %}></td>
+               </tr>    
+                <tr>
+                    <td>password:</td>
+                    <td><input type="password" placeholder="Enter your password" name="pw"></td>
+                </tr>
+
+               <tr>
+                   <td>Birthday: </td>
+                   <td><input type="date" name="dob" value="{{ val[5] }}"> </td>
+               </tr>
+                
+            
+               <tr>
+
+                   <td><input type="submit"></td>
+               </tr>
+            </table>
+        </form>
+    </body>
+</html>
